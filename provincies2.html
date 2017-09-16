@@ -1,29 +1,33 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="//static.gapminderdev.org/vizabi.css">
-<link rel="stylesheet" href="//static.gapminderdev.org/bubblechart.css">
+	<link rel="stylesheet" href="//static.gapminderdev.org/vizabi.css">
+	<link rel="stylesheet" href="//static.gapminderdev.org/bubblechart.css">
 
-<script src="//d3js.org/d3.v4.min.js"></script>
-<script src="//static.gapminderdev.org/vizabi.js"></script>
-<script src="//static.gapminderdev.org/bubblechart.js"></script>
+	<script src="//d3js.org/d3.v4.min.js"></script>
+	<script src="//static.gapminderdev.org/vizabi.js"></script>
+	<script src="//static.gapminderdev.org/bubblechart.js"></script>
 
 </head>
 
 <body>
 
-<div id="placeholder" class="example-placeholder" style="max-width: 720px; height: 500px; padding-top: 0;"></div>
+	<div id="placeholder" class="example-placeholder" style="max-width: 720px; height: 500px; padding-top: 0;"></div>
 
 
-<script>
-var config = {
-    "data": {
-      "reader": "csv-time_in_rows",
-      "path": "data_NL.csv"
-    }
-};
+	<script>
+	var config = {
+		"locale": {
+      	"filePath": 
+    	}, 
+	    "data": {
+	      "reader": "csv-time_in_rows",
+	      "path": "data_NL.csv"
+	    }
+	};
 
-Vizabi("BubbleChart", document.getElementById("placeholder"), config);
-</script>
+	Vizabi("BubbleChart", document.getElementById("placeholder"), config);
+	</script>
 
 </body>
+</html>
